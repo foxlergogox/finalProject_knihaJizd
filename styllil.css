@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+body {
+    font: 14px "Poppins";
+    background: #f9f9f9;
+    color: #171917;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    min-width: 960px;
+}
+
+body > header {
+    height: 100px;
+    width: 100%;
+    background: #538fe8;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0 5px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 2.3em;
+}
+
+
+nav ul a {
+    color: white;
+    padding: 3px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li:hover,
+.aktivni a {
+    border-bottom: 2px solid #EF6534;
+}
+
+article {
+    margin: 0;
+    padding: 0;
+    background-image: url('obrazky/ridic.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Barva textu na pozadí */
+}
+
+article header {
+    height: 80px;
+}
+
+h1 {
+    margin: 0;
+    padding: 3px 0;
+    color: #37f508;
+    margin: 0;
+    font-size: 3.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    border-bottom: 4px solid #EF6534;
+    justify-content: center;
+}
+
+
+.odkazy {
+    justify-content: center;
+    font-size: 1.3em;
+    font-family: Poppins;
+    src: url(fonty/Poppins-Regular.ttf);
+    font-weight: normal;
+    color: #37f508;
+    text-transform: uppercase;
+}
+
+
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100px;
+    color: white;
+    background: #538fe8;
+    padding: 50px 0 0 0;
+    clip-path: polygon(0 30px, 100% 0, 100% 105%, 0 105%);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.kontakt-tlacitko {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.kontakt-tlacitko:hover {
+    filter: brightness(115%) contrast(85%);
+    border: 0;
+}
